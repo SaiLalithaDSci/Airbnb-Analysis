@@ -233,8 +233,6 @@ with st.sidebar:
 
 # Display Home Page
 if choice == "Home":
-    st.write("## Dashboard")
-    st.write("Here you can find a summary of the analyses conducted.")
     st.write("### Cleaned Data Sample")
     st.write(cleaned_data.head())
     
