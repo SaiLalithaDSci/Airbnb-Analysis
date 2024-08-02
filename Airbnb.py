@@ -21,7 +21,7 @@ import plotly.express as px
 ################### FUNCTIONS ###################
 
 def get_data():
-    client = MongoClient('mongodb+srv://sai27lalitha:sailalitha@sample-airbnb-data.zv08wpn.mongodb.net/', tlsCAFile=certifi.where())
+    client = MongoClient('mongodb+srv://username:password@sample-airbnb-data.zv08wpn.mongodb.net/', tlsCAFile=certifi.where())
     db = client['sample_airbnb']
     listings = db['listingsAndReviews']
     data = pd.DataFrame(list(listings.find()))
